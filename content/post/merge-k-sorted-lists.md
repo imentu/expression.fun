@@ -1,5 +1,5 @@
 ---
-title: "合并K个升序链表"
+title: "合并 K 个升序链表"
 date: 2021-08-08T19:13:13+08:00
 hidden: false
 draft: false
@@ -9,7 +9,7 @@ description: ""
 slug: "Merge K Sorted List"
 ---
 
-题目地址：[LeetCode-23  合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
+题目地址：[LeetCode-23 合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
 
 ## 方案一：排序所有节点后拼接链表
 
