@@ -1,8 +1,8 @@
 ---
-title: "LRU 缓存"
+title: "LeetCode-146 LRU 缓存机制"
 date: 2021-09-21T19:55:02+08:00
 draft: false
-tags: ["算法"]
+tags: ["LeetCode"]
 keywords: []
 description: ""
 slug: "Lru Cache"

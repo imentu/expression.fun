@@ -1,8 +1,8 @@
 ---
-title: "LFU 缓存"
+title: "LeetCode-460 LFU 缓存"
 date: 2021-09-22T09:59:05+08:00
 draft: false
-tags: ["算法"]
+tags: ["LeetCode"]
 keywords: []
 description: ""
 slug: "Lfu Cache"

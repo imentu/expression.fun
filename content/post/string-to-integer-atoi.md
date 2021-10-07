@@ -1,8 +1,8 @@
 ---
-title: "字符串转换整数（atoi）"
+title: "LeetCode-8 字符串转换整数（atoi）"
 date: 2021-09-23T21:45:42+08:00
 draft: false
-tags: ["算法"]
+tags: ["LeetCode"]
 keywords: []
 description: ""
 slug: "String to Integer Atoi"

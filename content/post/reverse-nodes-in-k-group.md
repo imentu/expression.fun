@@ -1,9 +1,9 @@
 ---
-title: "K 个一组翻转链表"
+title: "LeetCode-25 K 个一组翻转链表"
 date: 2021-10-06T11:06:44+08:00
 hidden: false
 draft: false
-tags: ["算法"]
+tags: ["LeetCode"]
 keywords: []
 description: ""
 slug: "Reverse Nodes in K Group"
