@@ -1,7 +1,6 @@
 ---
 title: "LeetCode-236 二叉树的最近公共祖先"
 date: 2021-10-07T11:09:24+08:00
-hidden: false
 draft: false
 tags: ["LeetCode"]
 keywords: []

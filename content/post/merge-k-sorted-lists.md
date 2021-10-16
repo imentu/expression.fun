@@ -1,7 +1,6 @@
 ---
 title: "LeetCode-23 合并 K 个升序链表"
 date: 2021-08-08T19:13:13+08:00
-hidden: false
 draft: false
 tags: ["LeetCode"]
 keywords: []
