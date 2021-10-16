@@ -86,3 +86,95 @@ func merge(l1, l2 *ListNode) *ListNode {
 }
 ```
 
+### 自底向上归并排序
+
+```go
+/*
+	执行耗时:28 ms,击败了72.46% 的Go用户
+	内存消耗:6.8 MB,击败了99.32% 的Go用户
+*/
+func sortList(head *ListNode) *ListNode {
+	length := len(head)
+	sentinel := &ListNode{Val: 0, Next: head}
+	for sz := 1; sz < length; sz += sz {
+		prev := sentinel
+		current := sentinel.Next
+		for current != nil {
+			l1s := current
+			l1e := moveAtMostX(l1s, sz)
+			if l1e.Next == nil { // 没有后半边，无法归并，退出内循环
+				break
+			}
+
+			l2s := l1e.Next
+			l2e := moveAtMostX(l2s, sz)
+
+			next := l2e.Next // 下一组待归并项的起始位置
+
+			l1e.Next = nil // 打断链表，准备合并
+			l2e.Next = nil
+
+			subHead := merge(l1s, l2s)
+			prev.Next = subHead
+
+			tail := tailOf(subHead)
+			tail.Next = next // 归并后链接到后续节点
+
+			prev = tail
+			current = next
+		}
+	}
+	return sentinel.Next
+}
+
+func len(head *ListNode) int {
+	length := 0
+	for head != nil {
+		length += 1
+		head = head.Next
+	}
+	return length
+}
+
+func moveAtMostX(head *ListNode, x int) *ListNode {
+	for i := 1; i < x && head.Next != nil; i++ {
+		head = head.Next
+	}
+	return head
+}
+
+func merge(l1, l2 *ListNode) *ListNode {
+	sentinel := &ListNode{}
+	current := sentinel
+
+	for l1 != nil || l2 != nil {
+		if l1 == nil {
+			current.Next = l2
+			break
+		}
+		if l2 == nil {
+			current.Next = l1
+			break
+		}
+
+		if l1.Val < l2.Val {
+			current.Next = l1
+			l1 = l1.Next
+		} else {
+			current.Next = l2
+			l2 = l2.Next
+		}
+		current = current.Next
+	}
+
+	return sentinel.Next
+}
+
+func tailOf(head *ListNode) *ListNode {
+	for head.Next != nil {
+		head = head.Next
+	}
+	return head
+}
+```
+

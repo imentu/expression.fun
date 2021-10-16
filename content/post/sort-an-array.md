@@ -1,8 +1,14 @@
 ---
-title: "Sort an Array"
+title: "LeetCode-912 排序数组"
 date: 2021-10-15T19:29:15+08:00
-draft: true 
+draft: false
+tags: ["LeetCode"]
+keywords: []
+description: ""
+slug: "Sort an Array"
 ---
+
+题目地址：[LeetCode-912 排序数组](https://leetcode-cn.com/problems/sort-an-array/)
 
 ## 代码
 
