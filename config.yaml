@@ -15,15 +15,15 @@ googleAnalytics:
 DefaultContentLanguage: zh-cn
 
 permalinks:
-    post: /p/:slug/
     page: /:slug/
 
 params:
     mainSections:
         - post
+        - leetcode
     featuredImageField: image
     rssFullContent: true
-    favicon:
+    favicon: /resources/favicon/32.ico
 
     footer:
         since: 2021
@@ -120,20 +120,20 @@ params:
 
     widgets:
         enabled:
-            - search
             - archives
             - tag-cloud
+            - search
 
         archives:
-            limit: 5
+            limit: 15
 
         tagCloud:
-            limit: 10
+            limit: 15
 
     opengraph:
         twitter:
             # Your Twitter username
-            site:
+            site: zz_imentu
 
             # Available values: summary, summary_large_image
             card: summary_large_image

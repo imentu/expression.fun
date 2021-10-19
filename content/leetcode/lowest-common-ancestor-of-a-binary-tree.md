@@ -12,7 +12,7 @@ slug: "Lowest Common Ancestor of a Binary Tree"
 
 ## 思路
 
-用 DFS 将对应节点到根节点的路径存储到链表中，问题就变成了[找两个相交链表的第一个交点]({{<ref "post/intersection-of-two-linked-lists.md">}})。
+用 DFS 将对应节点到根节点的路径存储到链表中，问题就变成了[找两个相交链表的第一个交点]({{<ref "leetcode/intersection-of-two-linked-lists.md">}})。
 
 ## 代码
 

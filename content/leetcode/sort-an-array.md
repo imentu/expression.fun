@@ -3,7 +3,7 @@ title: "LeetCode-912 排序数组"
 date: 2021-10-15T19:29:15+08:00
 draft: false
 tags: ["LeetCode"]
-keywords: []
+keywords: ["排序", "归并排序", "快速排序"]
 description: ""
 slug: "Sort an Array"
 ---
